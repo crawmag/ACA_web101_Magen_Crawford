@@ -1,0 +1,52 @@
+body {
+    background-color: #aaaaaa;
+}
+
+#container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border: dashed blue 5px;
+}
+
+h2 {
+    color: rgba(0, 128, 128, 0.2);
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+p {
+    color: magenta;
+    margin: 10%;
+    padding: 5%;
+    border: white 3px;
+    border-style: dashed dotted solid double;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.date {
+    color: brown;
+    font-size: 20px;
+    border-style: dotted solid;
+    border-color: darkgreen coral;
+}
+
+small {
+    display: block;
+    color: white;
+    font-size: 10px;
+    border-bottom: solid cyan 3px;
+    margin: 5% 30%;
+}
+
+h2:hover {
+    color: rgba(0, 128, 128, 1);
+}
+
+p:hover {
+    background-color: firebrick;
+    color: black;
+    border-style: solid;
+}
