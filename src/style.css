@@ -1,45 +1,3 @@
-/* .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 20%;
-    grid-gap: 1em;
-    grid-template-areas: 
-        "header header header"
-        "dates content aside"
-        "dates content aside"
-        "dates content aside"
-        "footer footer footer" 
-}
-
-
-header {
-    grid-area: header; 
-    background-color: blue;
-
-}
-
-.content {
-    grid-area: content;
-    background-color: red;
-
-}
-
-.dates {
-    grid-area: dates;
-    background-color: green;
-    align-content: space-between;
-}
-
-aside {
-    grid-area: aside;
-    background-color: gray;
-}
-
-.content1 {
-    grid-area: footer;
-    background-color: cyan;
-} */
-
 body {
     background: linear-gradient(to right, rgb(39, 203, 216), rgb(147, 96, 159));
 }
@@ -60,6 +18,3 @@ body {
     overflow: hidden;
     width: 60%;
 }
-
-
-
