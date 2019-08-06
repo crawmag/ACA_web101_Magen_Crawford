@@ -1,6 +1,6 @@
 body {
     display: grid;
-    background-image: url("images/venice.jpg");
+    background-image: url("/images/venice.jpg");
     color: white;
     background-size: cover;
 }
