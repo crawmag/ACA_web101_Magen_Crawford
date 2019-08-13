@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.header {
+  overflow: hidden;
+  background-color: aqua;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.header a {
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.header a:hover {
+  background-color: white;
+}
+
+.navbar {
+  float: right;
+}
+
+h1 {
+  color: red;
+  font-family: "Cinzel Decorative", cursive;
+  text-align: center;
+}
+
+.active {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+hr {
+  padding: 10px;
+  background-color: black;
+}

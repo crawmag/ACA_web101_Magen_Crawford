@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  display: grid;
+  background-color: black;
+  color: white;
+}
+
+#info {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  text-align: center;
+}
+
+.info {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  text-align: left;
+  padding: 10px;
+}
+
+.links a {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  background-color: red;
+}
+
+h1 {
+  text-align: center;
+}
+
+iframe {
+  margin-bottom: 20px;
+}
+
+.active {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.dogs {
+  display: block;
+  margin: 0 auto;
+}
+
+.movie {
+  display: block;
+  margin: 0 auto;
+}
+
+.header {
+  overflow: hidden;
+  background-color: aqua;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.header a {
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.header a:hover {
+  background-color: white;
+}
+
+.navbar {
+  float: right;
+}
+
+h1 {
+  color: red;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.links {
+  margin: 20px 0 50px 0;
+}
+
+@media (min-width: 600px) {
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}

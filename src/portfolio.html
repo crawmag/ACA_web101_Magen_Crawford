@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Portfolio</h1>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="nasa.html">Nasa Landing Page</a>
-    <a href="hairLandingPage.html">Hair Landing Page</a>
-</body>
+    <link rel="stylesheet" href="../styles/portfolio-style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Magen Crawford</h1>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <div class="navbar">
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About Me</a>
+        <a href="https://medium.com/@magencrawford">My Blog</a>
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </div>
+    </header>
+    <div class="links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="nasa.html">Nasa Landing Page</a>
+      <a href="hairLandingPage.html">Hair Landing Page</a>
+    </div>
+    <div class="dogs">
+      <iframe
+        width="490"
+        height="315"
+        src="https://www.youtube.com/embed/TY5MRe2Rj1w"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="movie">
+      <video
+        controls
+        autoplay
+        src="https://ia800206.us.archive.org/33/items/electricsheep-flock-244-32500-1/00244%3D32591%3D22942%3D22973_512kb.mp4"
+      ></video>
+    </div>
+
+    <div id="info">
+      <form action="">
+        <div class="info">
+          <label>Email:</label>
+          <input type="email" name="" id="" />
+        </div>
+        <div class="info">
+          <label>Name:</label>
+          <input type="text" />
+        </div>
+        <div class="info">
+          <label>Location:</label>
+          <input type="text" />
+        </div>
+        <div class="info">
+          <label>Message:</label>
+          <textarea name="" id="" cols="20" rows="5"></textarea>
+        </div>
+        <div class="reset">
+          <input type="button" value="Reset" />
+        </div>
+        <br />
+        <div class="submit">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
