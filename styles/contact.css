@@ -40,3 +40,12 @@ hr {
   padding: 10px;
   background-color: black;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  justify-content: center;
+}
