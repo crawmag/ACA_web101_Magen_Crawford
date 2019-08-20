@@ -21,6 +21,10 @@ body {
   background-color: white;
 }
 
+#right:hover {
+  background-color: aqua;
+}
+
 .navbar {
   float: right;
 }
@@ -36,11 +40,6 @@ h1 {
   font-weight: bold;
 }
 
-hr {
-  padding: 10px;
-  background-color: black;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -48,4 +47,67 @@ form {
 
 input {
   justify-content: center;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas:
+    ". h h ."
+    "c c a a"
+    ". q q .";
+}
+
+p {
+  grid-area: h;
+  text-align: justify;
+}
+
+fieldset {
+}
+
+.fab {
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+}
+
+form {
+  grid-area: c;
+  margin: 0 50px 0 50px;
+}
+
+.address {
+  grid-area: a;
+  text-align: center;
+  margin: 0 50px 0 50px;
+}
+
+.address p {
+  text-align: center;
+}
+
+blockquote {
+  grid-area: q;
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-areas:
+      ". h ."
+      ". c ."
+      ". a ."
+      ". q .";
+  }
+  .address {
+    margin-top: 50px;
+  }
+  blockquote {
+    margin-bottom: 50px;
+  }
 }

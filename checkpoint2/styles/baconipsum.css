@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-image: url("../images/calm.jpg");
+  background-size: 1600px 900px;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas:
+    "top top top top top"
+    "middle middle middle middle middle"
+    ". bottom bottom bottom .";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20x;
+}
+
+.fab {
+  font-size: 20px;
+  padding: 14px 16px;
+  color: white;
+}
+
+.bacon {
+  margin: 20px;
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lobster", cursive;
+}
+
+hr {
+  padding: 20px;
+}
+
+.middle {
+  display: flex;
+  grid-area: middle;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+}
+
+.bottom {
+  grid-area: bottom;
+  display: flex;
+}
+
+#bacon1 {
+  background-color: blue;
+}
+
+#bacon2 {
+  background-color: orange;
+}
+
+#bacon3 {
+  background-color: teal;
+}

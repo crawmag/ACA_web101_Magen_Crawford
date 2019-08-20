@@ -1,0 +1,39 @@
+body {
+  background-color: blue;
+  color: blue;
+  margin: 0;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    ". h ."
+    ". c ."
+    ". c .";
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  text-transform: uppercase;
+  grid-area: h;
+  text-align: center;
+}
+
+div {
+  grid-area: c;
+  background-color: white;
+  padding: 20px;
+  margin: 60px;
+}
+
+@media (min-width: 700px) {
+  body {
+    grid-template-columns: 1fr 700px 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    grid-template-columns: 1fr 800px 1fr;
+  }
+}

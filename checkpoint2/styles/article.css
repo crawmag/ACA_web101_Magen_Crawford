@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". h ."
+    ". a .";
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  grid-area: h;
+  margin: 0;
+  padding: 10%;
+  font-size: 50px;
+  background-color: beige;
+}
+
+a {
+  font-family: "Lobster", cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.bottom {
+  grid-area: a;
+  display: flex;
+}
+
+p {
+  text-align: justify;
+}
+
+.bacon {
+  padding: 20px;
+}
+
+hr {
+  padding: 20px;
+}
+
+#bacon1 {
+  background-color: blue;
+}
+
+#bacon2 {
+  background-color: orange;
+}
+
+#bacon3 {
+  background-color: teal;
+}

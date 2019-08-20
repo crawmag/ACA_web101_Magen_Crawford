@@ -10,11 +10,17 @@
       href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="header">
       <h1>Magen Crawford</h1>
-      <a href="contact.html" class="active">Contact Me</a>
+      <a href="contact.html" class="active" id="right">Contact Me</a>
       <div class="navbar">
         <a href="resume.html">Resume</a>
         <a href="about.html">About Me</a>
@@ -22,39 +28,53 @@
         <a href="portfolio.html">Portfolio</a>
       </div>
     </div>
-    <p>
-      <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit.
-      Quae voluptate quod laboriosam, necessitatibus <del>nemo</del>
-      <ins>Nemo</ins> ipsam quidem distinctio quas non consequatur at impedit?
-      Impedit atque voluptates officiis suscipit sequi est <u>unde</u>.
-    </p>
-    <hr />
-    <address>
-      1234 Congress Ave <br />
-      Austin, TX 78745 <br />
-      USA
-    </address>
-    <form action="">
-      <fieldset>
-        <legend>Contact Me</legend>
-        <input type="email" placeholder="Email" /> <br />
-        <input type="text" placeholder="Name" /> <br />
-        <textarea
-          name="Message"
-          id=""
-          cols="30"
-          rows="5"
-          placeholder="Message"
-        ></textarea>
-        <br />
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
-    <blockquote>
-      <big>Technology is best when it brings people together.</big> <br />
-      <b
-        ><small><em>Matt Mullenweg, Social Media Entrepreneur</em></small></b
-      >
-    </blockquote>
+    <div class="contact">
+      <p>
+        <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing
+        elit. Quae voluptate quod laboriosam, necessitatibus <del>nemo</del>
+        <ins>Nemo</ins> ipsam quidem distinctio quas non consequatur at impedit?
+        Impedit atque voluptates officiis suscipit sequi est <u>unde</u>.
+      </p>
+      <form action="">
+          <fieldset>
+            <legend>Contact Me</legend>
+            <input type="email" placeholder="Email" /> <br />
+            <input type="text" placeholder="Name" /> <br />
+            <textarea
+              name="Message"
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      <div class="address">
+        <address>
+          1234 Congress Ave <br />
+          Austin, TX 78745 <br />
+          USA
+        </address>
+        <p>(512) 922-1012</p>
+        <p>crawford.magen@gmail.com</p>
+        <hr />
+        <div class="iconic">
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-google-plus-square"></i>
+          <i class="fab fa-pinterest-square"></i>
+        </div>
+        </div>
+      </div>
+
+      <blockquote>
+        <big>Technology is best when it brings people together.</big> <br />
+        <b
+          ><small><em>Matt Mullenweg, Social Media Entrepreneur</em></small></b
+        >
+      </blockquote>
+    </div>
   </body>
 </html>
