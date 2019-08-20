@@ -22,15 +22,15 @@ div:nth-child(odd) {
 #project:hover > div:nth-child(odd) {
   height: 100px;
   width: 100px;
-  transform: translateX(100px) rotate(180deg);
+  transform: translateX(200px) rotate(360deg);
 }
 
 #project div:nth-child(even) {
-  transition: all 1.5s ease-in-out, transform 2s;
+  transition: all 1.5s ease-in-out, transform 1s;
 }
 
 #project:hover > div:nth-child(even) {
   height: 25px;
   width: 25px;
-  transform: translateX(-100px) rotate(-180deg);
+  transform: translateX(-200px) rotate(-360deg);
 }
