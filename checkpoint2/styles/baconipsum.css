@@ -1,15 +1,19 @@
 body {
   margin: 0;
-  background-image: url("../images/calm.jpg");
+  background-color: bisque;
   background-size: 1600px 900px;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr auto;
   grid-template-areas:
-    "top top top top top"
-    "middle middle middle middle middle"
-    ". bottom bottom bottom .";
+    "top top top"
+    "middle middle middle"
+    "bottom bottom bottom";
+}
+
+.top {
+  grid-area: top;
 }
 
 ul {
@@ -26,7 +30,6 @@ li {
 
 li a {
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,18 +39,17 @@ li a {
 .fab {
   font-size: 20px;
   padding: 14px 16px;
-  color: white;
 }
 
 .bacon {
-  margin: 20px;
-  text-align: center;
-  color: white;
+  margin: 50px;
+  text-align: justify;
+  /* padding: 50px; */
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: "Lobster", cursive;
 }
 
@@ -55,12 +57,11 @@ hr {
   padding: 20px;
 }
 
-.middle {
+.welcome {
   display: flex;
   grid-area: middle;
   justify-content: center;
-  color: white;
-  font-size: 50px;
+  font-size: 2em;
   font-family: "Lobster", cursive;
 }
 
@@ -79,4 +80,63 @@ hr {
 
 #bacon3 {
   background-color: teal;
+}
+
+#welcome {
+  /* margin-bottom: 50px; */
+  display: flex;
+  justify-content: center;
+}
+
+#in {
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+
+h2 {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.welcome h2:nth-child(odd) {
+  transition: transform 1.5s;
+}
+
+.welcome h2:nth-child(even) {
+  transition: transform 1s;
+}
+
+.welcome:hover > #welcome > h2:nth-child(n + 4) {
+  transform: rotate(-360deg) translate(-115px);
+}
+
+.welcome:hover > #welcome > h2:nth-child(-n + 3) {
+  visibility: hidden;
+}
+
+.welcome:hover > #in {
+  visibility: visible;
+}
+
+@media (max-width: 900px) {
+  body {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "top"
+      "middle"
+      "bottom"; */
+  }
+  h2 {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
